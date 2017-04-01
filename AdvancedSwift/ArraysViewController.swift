@@ -54,9 +54,29 @@ class ArraysViewController : UIViewController {
         
         print("filter function result : \([1, 3, 5, 8, 10].filter{$0 % 2 == 0})");
         
-        print("all function result : \([1, 4, 6, 8].all{$0 % 2 == 0})");
+        print("all function result : \([1, 5, 9, 11, 10].all{$0 % 2 == 0})");
         
         print("reduce function result : \(fibs.reduce(0, +))");
+        
+        print("word combines to \(["h", "e", "l", "l", "o"].reduce(""){$0 + $1})");
+        
+        print("customize map function \([3, 6, 9, 11].map2{Int(pow(Double($0), 3.0))})");
+        
+        print("customize filter function \([7, 8, 9, 10, 11, 12, 13, 14].filter2{$0 % 3 == 0})");
+        
+        // MARK: - Poker
+        let suits = ["♠", "♥", "♣", "♦"];
+        let ranks = ["J", "Q", "K", "A"]
+        let result = suits.flatMap { suit in
+            ranks.map{(suit, $0)};
+        }
+        print(result);
+        
+        suits.forEach {print("forEach item is \($0)")};
+        
+        let slice = fibs[1..<fibs.endIndex];
+        print(slice);
+        print(type(of: slice));
     }
 }
 
@@ -76,19 +96,17 @@ extension Sequence {
 extension Array {
     func accumulate<Result>(_ instialResult:Result, _ nextPartialResult:(Result , Element) -> Result) -> [Result] {
         var running = instialResult;
-        return map {next in
-            print(next);
-            running = nextPartialResult(running, next);
-            
+        return map {
+            running = nextPartialResult(running, $0);
             return running;
         }
     }
     
     func map2<T>(_ transform:(Element) -> T) -> [T] {
-        return reduce([], { (result, item) -> [T] in
-            print("result is \(result)");
-            print("item is \(item)");
-            return result + [transform(item)];
-        })
+        return reduce([], {$0 + [transform($1)]});
+    }
+    
+    func filter2(_ isIncluded:(Element) -> Bool) -> [Element] {
+        return reduce([]) {isIncluded($1) ? $0 + [$1] : $0};
     }
 }

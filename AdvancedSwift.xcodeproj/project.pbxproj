@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD5939AD1E8FA0F60062BDCE /* DictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5939AC1E8FA0F60062BDCE /* DictionaryViewController.swift */; };
 		AD747AF91E8E22170055A2A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD747AF81E8E22170055A2A7 /* AppDelegate.swift */; };
 		AD747B001E8E22170055A2A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD747AFF1E8E22170055A2A7 /* Assets.xcassets */; };
 		AD747B031E8E22170055A2A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD747B011E8E22170055A2A7 /* LaunchScreen.storyboard */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD5939AC1E8FA0F60062BDCE /* DictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryViewController.swift; sourceTree = "<group>"; };
 		AD747AF51E8E22170055A2A7 /* AdvancedSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvancedSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD747AF81E8E22170055A2A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD747AFF1E8E22170055A2A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			children = (
 				AD747AF81E8E22170055A2A7 /* AppDelegate.swift */,
 				AD747B0A1E8E22570055A2A7 /* ArraysViewController.swift */,
+				AD5939AC1E8FA0F60062BDCE /* DictionaryViewController.swift */,
 				AD747AFF1E8E22170055A2A7 /* Assets.xcassets */,
 				AD747B011E8E22170055A2A7 /* LaunchScreen.storyboard */,
 				AD747B041E8E22170055A2A7 /* Info.plist */,
@@ -132,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD5939AD1E8FA0F60062BDCE /* DictionaryViewController.swift in Sources */,
 				AD747AF91E8E22170055A2A7 /* AppDelegate.swift in Sources */,
 				AD747B0B1E8E22570055A2A7 /* ArraysViewController.swift in Sources */,
 			);
@@ -287,6 +291,7 @@
 				AD747B091E8E22170055A2A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
