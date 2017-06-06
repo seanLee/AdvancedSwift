@@ -13,6 +13,7 @@
 		AD747B001E8E22170055A2A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD747AFF1E8E22170055A2A7 /* Assets.xcassets */; };
 		AD747B031E8E22170055A2A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD747B011E8E22170055A2A7 /* LaunchScreen.storyboard */; };
 		AD747B0B1E8E22570055A2A7 /* ArraysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD747B0A1E8E22570055A2A7 /* ArraysViewController.swift */; };
+		ADB79BEF1EE67FBE00FEC380 /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB79BEE1EE67FBE00FEC380 /* SetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AD747B021E8E22170055A2A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD747B041E8E22170055A2A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD747B0A1E8E22570055A2A7 /* ArraysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArraysViewController.swift; sourceTree = "<group>"; };
+		ADB79BEE1EE67FBE00FEC380 /* SetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				AD747B0A1E8E22570055A2A7 /* ArraysViewController.swift */,
 				AD5939AC1E8FA0F60062BDCE /* DictionaryViewController.swift */,
 				AD3FBD5A1E963FA4007ECD5D /* HashViewController.swift */,
+				ADB79BEE1EE67FBE00FEC380 /* SetViewController.swift */,
 				AD747AFF1E8E22170055A2A7 /* Assets.xcassets */,
 				AD747B011E8E22170055A2A7 /* LaunchScreen.storyboard */,
 				AD747B041E8E22170055A2A7 /* Info.plist */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD5939AD1E8FA0F60062BDCE /* DictionaryViewController.swift in Sources */,
+				ADB79BEF1EE67FBE00FEC380 /* SetViewController.swift in Sources */,
 				AD747AF91E8E22170055A2A7 /* AppDelegate.swift in Sources */,
 				AD3FBD5B1E963FA4007ECD5D /* HashViewController.swift in Sources */,
 				AD747B0B1E8E22570055A2A7 /* ArraysViewController.swift in Sources */,

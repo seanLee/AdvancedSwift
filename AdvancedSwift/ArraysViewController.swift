@@ -110,3 +110,19 @@ extension Array {
         return reduce([]) {isIncluded($1) ? $0 + [$1] : $0};
     }
 }
+
+extension Array where Element : Equatable {
+    func index_foreach(of element: Element) -> Int? {
+        var location: Int?;
+        self.indices.filter { index in
+            self[index] == element
+            }.forEach { index in
+                location = index;
+        }
+        if let result = location {
+            return result
+        } else {
+            return nil;
+        }
+    }
+}
