@@ -27,6 +27,16 @@ class SetViewController: UIViewController {
         var discountinued: Set = ["iBook", "Powerbook", "Power Mac"]
         discountinued.formUnion(discontinuedIPods)
         print(discountinued)
+        
+        let singleDigitNumber = 0...9
+        
+        let lowercaseLetters = Character("a")...Character("z")
+        
+        let digitMap = singleDigitNumber.map {$0 * $0}
+        
+        for index in singleDigitNumber {
+            print("index is \(index)")
+        }
     }
 }
 

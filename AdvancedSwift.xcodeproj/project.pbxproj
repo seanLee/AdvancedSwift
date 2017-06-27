@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0A55AB1F0228E1005FBD39 /* OptionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0A55AA1F0228E1005FBD39 /* OptionalViewController.swift */; };
+		AD0F5EA91EEA9FB100AA3491 /* SequenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0F5EA81EEA9FB100AA3491 /* SequenceViewController.swift */; };
+		AD2079251EF51B470081C71F /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2079241EF51B470081C71F /* StackViewController.swift */; };
 		AD3FBD5B1E963FA4007ECD5D /* HashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3FBD5A1E963FA4007ECD5D /* HashViewController.swift */; };
 		AD5939AD1E8FA0F60062BDCE /* DictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5939AC1E8FA0F60062BDCE /* DictionaryViewController.swift */; };
+		AD5FB9361EFBAF1B00D0F8F0 /* SliceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5FB9351EFBAF1B00D0F8F0 /* SliceViewController.swift */; };
 		AD747AF91E8E22170055A2A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD747AF81E8E22170055A2A7 /* AppDelegate.swift */; };
 		AD747B001E8E22170055A2A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD747AFF1E8E22170055A2A7 /* Assets.xcassets */; };
 		AD747B031E8E22170055A2A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD747B011E8E22170055A2A7 /* LaunchScreen.storyboard */; };
@@ -17,8 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD0A55AA1F0228E1005FBD39 /* OptionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalViewController.swift; sourceTree = "<group>"; };
+		AD0F5EA81EEA9FB100AA3491 /* SequenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceViewController.swift; sourceTree = "<group>"; };
+		AD2079241EF51B470081C71F /* StackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		AD3FBD5A1E963FA4007ECD5D /* HashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashViewController.swift; sourceTree = "<group>"; };
 		AD5939AC1E8FA0F60062BDCE /* DictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryViewController.swift; sourceTree = "<group>"; };
+		AD5FB9351EFBAF1B00D0F8F0 /* SliceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliceViewController.swift; sourceTree = "<group>"; };
 		AD747AF51E8E22170055A2A7 /* AdvancedSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvancedSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD747AF81E8E22170055A2A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD747AFF1E8E22170055A2A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +71,10 @@
 				AD5939AC1E8FA0F60062BDCE /* DictionaryViewController.swift */,
 				AD3FBD5A1E963FA4007ECD5D /* HashViewController.swift */,
 				ADB79BEE1EE67FBE00FEC380 /* SetViewController.swift */,
+				AD0F5EA81EEA9FB100AA3491 /* SequenceViewController.swift */,
+				AD2079241EF51B470081C71F /* StackViewController.swift */,
+				AD5FB9351EFBAF1B00D0F8F0 /* SliceViewController.swift */,
+				AD0A55AA1F0228E1005FBD39 /* OptionalViewController.swift */,
 				AD747AFF1E8E22170055A2A7 /* Assets.xcassets */,
 				AD747B011E8E22170055A2A7 /* LaunchScreen.storyboard */,
 				AD747B041E8E22170055A2A7 /* Info.plist */,
@@ -144,7 +156,11 @@
 				AD5939AD1E8FA0F60062BDCE /* DictionaryViewController.swift in Sources */,
 				ADB79BEF1EE67FBE00FEC380 /* SetViewController.swift in Sources */,
 				AD747AF91E8E22170055A2A7 /* AppDelegate.swift in Sources */,
+				AD5FB9361EFBAF1B00D0F8F0 /* SliceViewController.swift in Sources */,
+				AD2079251EF51B470081C71F /* StackViewController.swift in Sources */,
+				AD0F5EA91EEA9FB100AA3491 /* SequenceViewController.swift in Sources */,
 				AD3FBD5B1E963FA4007ECD5D /* HashViewController.swift in Sources */,
+				AD0A55AB1F0228E1005FBD39 /* OptionalViewController.swift in Sources */,
 				AD747B0B1E8E22570055A2A7 /* ArraysViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
