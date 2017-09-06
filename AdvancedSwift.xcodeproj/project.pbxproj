@@ -20,7 +20,10 @@
 		AD747B001E8E22170055A2A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD747AFF1E8E22170055A2A7 /* Assets.xcassets */; };
 		AD747B031E8E22170055A2A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD747B011E8E22170055A2A7 /* LaunchScreen.storyboard */; };
 		AD747B0B1E8E22570055A2A7 /* ArraysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD747B0A1E8E22570055A2A7 /* ArraysViewController.swift */; };
+		AD7B2FAF1F5A80CF00D59A2F /* ProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7B2FAE1F5A80CF00D59A2F /* ProtocolViewController.swift */; };
+		AD7B2FB21F5A848E00D59A2F /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7B2FB11F5A848E00D59A2F /* libxml2.2.tbd */; };
 		ADB79BEF1EE67FBE00FEC380 /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB79BEE1EE67FBE00FEC380 /* SetViewController.swift */; };
+		ADCD1FB31F5E9E5E009E593A /* InteroperabilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD1FB21F5E9E5E009E593A /* InteroperabilityViewController.swift */; };
 		ADEA789B1F2347E20089CD31 /* StructViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEA789A1F2347E20089CD31 /* StructViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +43,10 @@
 		AD747B021E8E22170055A2A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD747B041E8E22170055A2A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD747B0A1E8E22570055A2A7 /* ArraysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArraysViewController.swift; sourceTree = "<group>"; };
+		AD7B2FAE1F5A80CF00D59A2F /* ProtocolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolViewController.swift; sourceTree = "<group>"; };
+		AD7B2FB11F5A848E00D59A2F /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 		ADB79BEE1EE67FBE00FEC380 /* SetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
+		ADCD1FB21F5E9E5E009E593A /* InteroperabilityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteroperabilityViewController.swift; sourceTree = "<group>"; };
 		ADEA789A1F2347E20089CD31 /* StructViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD7B2FB21F5A848E00D59A2F /* libxml2.2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +67,7 @@
 			children = (
 				AD747AF71E8E22170055A2A7 /* AdvancedSwift */,
 				AD747AF61E8E22170055A2A7 /* Products */,
+				AD7B2FB01F5A847C00D59A2F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,11 +95,21 @@
 				AD2B78041F298D3800ADAB9E /* ClosureViewController.swift */,
 				AD39476C1F3457420097755D /* StringViewController.swift */,
 				AD0AE1721F46E9AF00ECFCD2 /* GenericViewController.swift */,
+				AD7B2FAE1F5A80CF00D59A2F /* ProtocolViewController.swift */,
+				ADCD1FB21F5E9E5E009E593A /* InteroperabilityViewController.swift */,
 				AD747AFF1E8E22170055A2A7 /* Assets.xcassets */,
 				AD747B011E8E22170055A2A7 /* LaunchScreen.storyboard */,
 				AD747B041E8E22170055A2A7 /* Info.plist */,
 			);
 			path = AdvancedSwift;
+			sourceTree = "<group>";
+		};
+		AD7B2FB01F5A847C00D59A2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD7B2FB11F5A848E00D59A2F /* libxml2.2.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,10 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD7B2FAF1F5A80CF00D59A2F /* ProtocolViewController.swift in Sources */,
 				AD5939AD1E8FA0F60062BDCE /* DictionaryViewController.swift in Sources */,
 				ADB79BEF1EE67FBE00FEC380 /* SetViewController.swift in Sources */,
 				AD747AF91E8E22170055A2A7 /* AppDelegate.swift in Sources */,
 				ADEA789B1F2347E20089CD31 /* StructViewController.swift in Sources */,
+				ADCD1FB31F5E9E5E009E593A /* InteroperabilityViewController.swift in Sources */,
 				AD5FB9361EFBAF1B00D0F8F0 /* SliceViewController.swift in Sources */,
 				AD0AE1731F46E9AF00ECFCD2 /* GenericViewController.swift in Sources */,
 				AD2B78051F298D3800ADAB9E /* ClosureViewController.swift in Sources */,

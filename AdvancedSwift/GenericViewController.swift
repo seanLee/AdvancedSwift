@@ -21,6 +21,9 @@ class GenericViewController: UIViewController {
         let five2one = [5, 4, 3, 2, 1]
         print(one2three.isSubset(of: five2one))
         
+        var numbers = Array(1...10)
+        numbers.shuffle()
+        print(numbers)
     }
 }
 
@@ -57,46 +60,46 @@ extension Sequence where Iterator.Element: Hashable {
 }
 
 extension Array {
-    func binarySearch (for value: Element, areInIncreasingOrder:(Element, Element) -> Bool) -> Int? {
-        var left = 0
-        var right = count - 1
-        
-        while left <= right {
-            let mid = (left + right)/2
-            let candidate = self[mid]
-            
-            if areInIncreasingOrder(candidate, value) {
-                left = mid + 1
-            } else if areInIncreasingOrder(value, candidate) {
-                right = mid - 1
-            } else {
-                return mid
-            }
-        }
-        return nil
-    }
-    
-    mutating func shuffle() {
-        for i in 0..<(count - 1) {
-            let j = Int(arc4random_uniform(UInt32(count - i))) + 1
-            
-            guard i != j else {continue}
-            
-            swap(&self[i], &self[j])
-        }
-    }
-    
-    func shuffled() -> [Element] {
-        var clone = self
-        clone.shuffle()
-        return clone
-    }
+//    func binarySearch (for value: Element, areInIncreasingOrder:(Element, Element) -> Bool) -> Int? {
+//        var left = 0
+//        var right = count - 1
+//        
+//        while left <= right {
+//            let mid = (left + right)/2
+//            let candidate = self[mid]
+//            
+//            if areInIncreasingOrder(candidate, value) {
+//                left = mid + 1
+//            } else if areInIncreasingOrder(value, candidate) {
+//                right = mid - 1
+//            } else {
+//                return mid
+//            }
+//        }
+//        return nil
+//    }
+//    
+//    mutating func shuffle() {
+//        for i in 0..<(count - 1) {
+//            let j = Int(arc4random_uniform(UInt32(count - i))) + 1
+//            
+//            guard i != j else {continue}
+//            
+//            swap(&self[i], &self[j])
+//        }
+//    }
+//    
+//    func shuffled() -> [Element] {
+//        var clone = self
+//        clone.shuffle()
+//        return clone
+//    }
 }
 
 extension Array where Element: Comparable {
-    func binarySearch(for value: Element) -> Int? {
-        return self.binarySearch(for: value, areInIncreasingOrder: <)
-    }
+//    func binarySearch(for value: Element) -> Int? {
+//        return self.binarySearch(for: value, areInIncreasingOrder: <)
+//    }
 }
 
 extension SignedInteger {
@@ -107,3 +110,28 @@ extension SignedInteger {
         return numericCast(Darwin.arc4random_uniform(numericCast(upper_bound)))
     }
 }
+
+extension MutableCollection where Self: RandomAccessCollection {
+    mutating func shuffle() {
+        var i = startIndex
+        let beforeEndIndex = index(before: endIndex)
+        while i < beforeEndIndex {
+            let dist = distance(from: i, to: endIndex)
+            let randomDistance = IndexDistance.arc4random_uniform(dist)
+            let j = index(i, offsetBy: randomDistance)
+            guard i != j else {continue}
+            swap(&self[i], &self[j])
+            formIndex(after: &i)
+        }
+    }
+}
+
+extension Sequence {
+    func shuffled() -> [Iterator.Element] {
+        var clone = Array(self)
+        clone.shuffle()
+        return clone
+    }
+}
+
+

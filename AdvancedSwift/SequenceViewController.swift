@@ -75,11 +75,6 @@ class SequenceViewController: UIViewController {
     }
 }
 
-struct ConstantIterator: IteratorProtocol {
-    mutating func next() -> Int? {
-        return 1
-    }
-}
 
 struct FibsIterator: IteratorProtocol {
     var state = (0, 1)
